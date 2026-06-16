@@ -9,6 +9,6 @@ public class AppDbContext : DbContext
         : base(options)
     {
     }
-
+    public DbSet<Message> Messages { get; set; }
     public DbSet<TodoItem> TodoItems { get; set; }
 }
